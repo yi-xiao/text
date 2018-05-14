@@ -6,3 +6,5 @@ git log 查看commit历史  --pretty=oneline稍微格式化格式
 git reflog 查看操作历史，后悔药
 
 git reset --hard HEAD [^/~] ^个数代表回退版本数/~接数字代表回退版本数
+
+## diff命令 查看工作区与版本库最新版本的区别

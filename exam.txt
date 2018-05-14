@@ -29,3 +29,5 @@ git config --global user.email "your@email.com"
 
 而对于使用https方式来讲，每次push都需要验证用户名和密码。
 
+##now i'm create a bug feature, and then i will merge it and delete it.
+

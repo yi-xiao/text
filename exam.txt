@@ -1,2 +1,8 @@
 hello , that is a new text file!
 see , i change this?
+
+git log 查看commit历史  --pretty=oneline稍微格式化格式 
+
+git reflog 查看操作历史，后悔药
+
+git reset --hard HEAD [^/~] ^个数代表回退版本数/~接数字代表回退版本数

@@ -35,3 +35,6 @@ git push origin <name> 推送到远程分支，没有则创建并推送
 
 git push origin --delete <branchName>删除远程分支
 
+##now i'm create a bug feature, and then i will merge it and delete it.
+
+

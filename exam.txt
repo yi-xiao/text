@@ -29,3 +29,9 @@ git config --global user.email "your@email.com"
 
 而对于使用https方式来讲，每次push都需要验证用户名和密码。
 
+## 
+
+git push origin <name> 推送到远程分支，没有则创建并推送
+
+git push origin --delete <branchName>删除远程分支
+

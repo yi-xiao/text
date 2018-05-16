@@ -37,4 +37,7 @@ git push origin --delete <branchName>删除远程分支
 
 ##now i'm create a bug feature, and then i will merge it and delete it.
 
+## now stash a key, and then recover it
 
+git stash apply stash@{xx} 回复某个工作现场
+git stash clear 清空stash

@@ -53,9 +53,29 @@ xhr.open('GET', 'ajax_info.text', true);
 xhr.send();
 
 
-// xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-// xhr.open('POST', 'ajax_text.html', true);
-// xhr.send('uname=Jack&upwd=12300');
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.open('POST', 'ajax_text.html', true);
+xhr.send('uname=Jack&upwd=12300');
 
 
 
+/* ======================= jquery编写ajax ==============================*/
+
+//常见用法  
+$.ajax({
+	url: xx, //默认当前页面url
+	data: xx,
+	type: xx, // GET、POST
+	success: function (result, status, xhr) {
+
+	},
+	error: function (xhr, status, err) {
+
+	},
+	complete: function (xhr, status) {
+		
+	},
+	beforeSend: function (xhr) {
+
+	}
+})

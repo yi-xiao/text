@@ -41,3 +41,4 @@ git push origin --delete <branchName>删除远程分支
 
 git stash apply stash@{xx} 回复某个工作现场
 git stash clear 清空stash
+git stash pop 恢复第一个stash并删除它

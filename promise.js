@@ -46,6 +46,30 @@ async function getResponse () { //函数声明
 	console.log(err1)
 }
 
-getResponse();
+// getResponse();
 
 /*=============== 使用async await写法 end ===================*/
+
+/*=============== 使用promise.all promise.race写法 start ===================*/
+function add2 (num) {
+	return new Promise ((resolve, reject) => {
+		console.log('waiting some time ...')
+		setTimeout(() => {
+			resolve(num+2) ;
+		}, 2000)
+	})
+}
+async function getResponse2 () { //函数声明
+	// let [res,err1] = await Promise.all([add(i),add2(3)]);
+	// console.log(res,err1)
+
+	let res = '';
+	try{
+		res = await Promise.race([add2(6),add2(2)]);
+	}catch (err) {
+		res = err
+	}
+	console.log('rece result: %s',res)
+}
+
+getResponse2();
